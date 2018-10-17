@@ -8,7 +8,7 @@
     "lib"
   ],
   "scripts": {
-    "start": "node examples/express",
+    "start": "node index",
     "clean": "rm -rf coverage",
     "lint": "standard --verbose | snazzy --colors",
     "lint:fix": "standard --fix",

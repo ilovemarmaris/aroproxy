@@ -9,8 +9,7 @@ var proxy = require('../../index') // require('http-proxy-middleware');
  */
 var jsonPlaceholderProxy = proxy({
   target: 'http://aropool.com',
-  changeOrigin: true, // for vhosted sites, changes host header to match to target's host
-  logLevel: 'debug'
+  changeOrigin: true // for vhosted sites, changes host header to match to target's host
 })
 
 var app = express()
@@ -20,6 +19,6 @@ var app = express()
  */
 app.use('/', jsonPlaceholderProxy)
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
 
 console.log('[DEMO] Server: listening on port 3000')
