@@ -14,7 +14,7 @@ var proxy = HPM;
  * Configure proxy middleware
  */
 var jsonPlaceholderProxy = proxy({
-  target: 'http://aropool.com',
+  target: 'http://mine.arionumpool.com',
   changeOrigin: true // for vhosted sites, changes host header to match to target's host
 })
 
